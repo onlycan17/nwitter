@@ -9,7 +9,17 @@ import {
     signInWithPopup,
     signOut
 } from "firebase/auth";
-import {getFirestore, addDoc, collection, serverTimestamp, getDocs} from "firebase/firestore";
+import {
+    getFirestore,
+    addDoc,
+    collection,
+    serverTimestamp,
+    getDocs,
+    onSnapshot,
+    doc,
+    query,
+    orderBy,
+} from "firebase/firestore";
 
 //import firestore from "firebase.firestore";
 // Your web app's Firebase configuration
@@ -37,3 +47,7 @@ export const addDocEx = addDoc;
 export const collectionEx = collection;
 export const serverTimestampEx = serverTimestamp;
 export const getDocsEx = getDocs;
+export const onSnapShotEx = onSnapshot;
+export const docEx = doc;
+export const queryEx = query;
+export const orderbyEx = orderBy;
