@@ -19,6 +19,8 @@ import {
     doc,
     query,
     orderBy,
+    deleteDoc,
+    updateDoc
 } from "firebase/firestore";
 
 //import firestore from "firebase.firestore";
@@ -51,3 +53,5 @@ export const onSnapShotEx = onSnapshot;
 export const docEx = doc;
 export const queryEx = query;
 export const orderbyEx = orderBy;
+export const deleteDocEx = deleteDoc;
+export const updateDocEx = updateDoc;
