@@ -7,7 +7,8 @@ import {
     GoogleAuthProvider,
     GithubAuthProvider,
     signInWithPopup,
-    signOut
+    signOut,
+    updateProfile
 } from "firebase/auth";
 import {
     getFirestore,
@@ -20,8 +21,15 @@ import {
     query,
     orderBy,
     deleteDoc,
-    updateDoc
+    updateDoc,
+    where
 } from "firebase/firestore";
+import { 
+    getDownloadURL, 
+    getStorage, 
+    ref, 
+    uploadString  } from "firebase/storage";
+
 
 //import firestore from "firebase.firestore";
 // Your web app's Firebase configuration
@@ -55,3 +63,9 @@ export const queryEx = query;
 export const orderbyEx = orderBy;
 export const deleteDocEx = deleteDoc;
 export const updateDocEx = updateDoc;
+export const storage = getStorage();
+export const refEx = ref;
+export const uploadStringEx = uploadString;
+export const getDownloadURLEx = getDownloadURL;
+export const whereEx = where;
+export const updateProfileEx = updateProfile;
